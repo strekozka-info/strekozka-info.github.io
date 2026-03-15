@@ -22,6 +22,6 @@ img, picture, video, canvas, svg {    display: block;    max-width: 100%; }
 
 #top .main-logo {
     /* 5vw (шрифт) * 1.5 = 7.5vw */
-    height: 4.5vw;              
+    height: 2.5vw;              
     width: auto;
 }
