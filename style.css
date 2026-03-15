@@ -16,7 +16,7 @@ img, picture, video, canvas, svg {    display: block;    max-width: 100%; }
 }
 
 #top h1 {
-    font-size: 4vw;  
+    font-size: 3.4vw;  
     font-family: 'Consolas', 'Monaco', 'Ubuntu Mono', 'Liberation Mono', monospace; 
     color: #f32a76;
     /* Интервал  */
