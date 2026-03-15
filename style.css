@@ -19,10 +19,10 @@ img, picture, video, canvas, svg {    display: block;    max-width: 100%; }
     font-size: 4vw;  
     font-family: 'Consolas', 'Monaco', 'Ubuntu Mono', 'Liberation Mono', monospace; 
     color: #f32a76;
-    /* Интервал 1.5 от текущего размера шрифта */
-    letter-spacing: 0.5em;      
+    /* Интервал  */
+    letter-spacing: 0.3em;      
     /* Убираем хвост последней буквы для идеального центра */
-    margin-right: -0.5em; 
+    margin-right: -0.3em; 
 }
 
 #top .main-logo {
