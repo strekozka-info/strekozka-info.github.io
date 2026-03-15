@@ -6,9 +6,6 @@ html, body {    height: 100%;    width: 100%;    -webkit-font-smoothing: antiali
 img, picture, video, canvas, svg {    display: block;    max-width: 100%; }
 
 
-h1 {
-    font-size: 4rem;
+h1 {    font-size: 4rem;
        letter-spacing: 5px;
-    
-    /* Цвет текста: сделаем ярко-голубым */
-    color: #f32a76;  }
+       color: #f32a76;  }
