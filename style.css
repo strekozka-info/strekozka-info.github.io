@@ -1,0 +1,8 @@
+
+h1 {
+    font-size: 4rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    
+    /* Цвет текста: сделаем ярко-голубым */
+    color: #00d4ff;  }
