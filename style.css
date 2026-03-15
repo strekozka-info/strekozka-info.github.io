@@ -18,9 +18,10 @@ img, picture, video, canvas, svg {    display: block;    max-width: 100%; }
 #top h1 {
     font-size: 4vw;             /* Масштаб от ширины окна */
     color: #f32a76;
-        letter-spacing: 1.5vw; 
-    /* Убираем лишний хвост у последней буквы, чтобы центровка была идеальной */
-    margin-right: -1.5vw; 
+    /* Интервал 1.5 от текущего размера шрифта */
+    letter-spacing: 0.5em;      
+    /* Убираем хвост последней буквы для идеального центра */
+    margin-right: -0.5em; 
 }
 
 #top .main-logo {
