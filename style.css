@@ -16,7 +16,7 @@ img, picture, video, canvas, svg {    display: block;    max-width: 100%; }
 }
 
 #top h1 {
-    font-size: 5vw;             /* Масштаб от ширины окна */
+    font-size: 4vw;             /* Масштаб от ширины окна */
     color: #f32a76;
         letter-spacing: 1.5vw; 
     /* Убираем лишний хвост у последней буквы, чтобы центровка была идеальной */
