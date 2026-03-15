@@ -1,0 +1,1 @@
+# strekozka-info.github.io
