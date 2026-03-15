@@ -32,7 +32,6 @@ img, picture, video, canvas, svg {    display: block;    max-width: 100%; }
     width: auto;
 }
 
-
 #all {
     width: 100%;
     min-height: 85vh; 
