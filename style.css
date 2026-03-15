@@ -31,3 +31,28 @@ img, picture, video, canvas, svg {    display: block;    max-width: 100%; }
     height: 2.5vw;              
     width: auto;
 }
+
+#all {
+    width: 100%;
+    /* Минимальная высота 85% окна, но может расти вниз */
+    min-height: 85vh; 
+    
+    /* Сдвигаем вниз, чтобы не перекрывать #top */
+    margin-top: 15vh; 
+    
+    /* Твои параметры: бордер и отступы */
+    border: 3px solid #000000;
+    padding-left: 10vw;
+    padding-right: 10vw;
+
+    background-color: #0d1117;
+    box-sizing: border-box; /* Чтобы бордер не раздувал ширину */
+}
+
+
+
+
+
+
+
+
