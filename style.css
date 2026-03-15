@@ -5,7 +5,23 @@ html, body {    height: 100%;    width: 100%;    -webkit-font-smoothing: antiali
 
 img, picture, video, canvas, svg {    display: block;    max-width: 100%; }
 
+#top {
+    width: 100%;
+    height: 15vh;               /* 15% от высоты окна */
+    border: 3px solid #f32a76;  /* Рамка 3 пикселя */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
 
-h1 {    font-size: 4rem;
-       letter-spacing: 5px;
-       color: #f32a76;  }
+#top h1 {
+    font-size: 5vw;             /* Масштаб от ширины окна */
+    color: #f32a76;
+}
+
+#top .main-logo {
+    /* 5vw (шрифт) * 1.5 = 7.5vw */
+    height: 7.5vw;              
+    width: auto;
+}
