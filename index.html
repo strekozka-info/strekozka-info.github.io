@@ -10,10 +10,20 @@
 </head>
 <body>
    <div id="top">
+    <!-- 1. Самый нижний слой -->
+    <img src="W1.webp" id="W1" alt="Background">
+
+    <!-- 2. Текст (под прозрачным слоем W2) -->
     <h1>Welcome to Strekozka!</h1>
-       
-<img src="favicon.png" alt="Logo" class="main-logo">
-<img src="W1.webp" id="W1" alt="Background">
+
+    <!-- 3. Слой поверх текста, но под логотипом -->
+    <img src="W2.webp" id="W2" alt="Overlay">
+
+    <!-- 4. Самый верхний слой (кликабельный) -->
+    <a href="/" class="logo-link">
+        <img src="favicon.png" alt="Logo" class="main-logo">
+    </a>
+</div>
 
 
        
