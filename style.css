@@ -4,7 +4,7 @@
 * {
     margin: 0;     padding: 0;     box-sizing: border-box; }
 
-body {
+body {background-color: #F32A77;
   overflow-x: hidden;
     font-family: sans-serif;
 }
@@ -79,7 +79,7 @@ body {
 
 
 
-/* 3. КОНТЕНТ ПОД ШАПКОЙ */
+/* -------------------------------- КОНТЕНТ ПОД ШАПКОЙ---------------------------------    */
 #all {
     position: relative;
     z-index: 10;
@@ -93,8 +93,8 @@ body {
     margin-bottom: 1.5rem;
 
 
-	color: #FFF;
-	background-color: #F32A77;
+	
+	
     /* Чтобы текст не прятался под фиксированной шапкой в начале: */
     /* Маржин равен высоте блока с такой же пропорцией */
     margin-top: calc(100vw * 731 / 2560); 
