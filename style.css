@@ -94,14 +94,15 @@ body {background-color: #FFF;
     margin: 0 auto;
     /* ГРАДИЕНТ: прозрачный -> розовый -> прозрачный */
     background: linear-gradient(to right, transparent, #F32A77, transparent);
-}
 
-    
     /* Чтобы линия легла ТОЧНО на стык с шапкой: */
     position: relative;
     top: 0;
 }
+	
 
+
+    
 
 /* -------------------------------- КОНТЕНТ ПОД ШАПКОЙ---------------------------------    */
 #all {
