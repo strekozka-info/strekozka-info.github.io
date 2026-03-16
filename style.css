@@ -42,7 +42,7 @@ body {
 
 /* АНИМАЦИЯ УХОДА */
 @keyframes slow-hide {
-    to { transform: translateY(-100%); } 
+    to { transform: translateY(-90%); } 
 }
 
 /* 3. КОНТЕНТ ПОД ШАПКОЙ */
@@ -51,7 +51,7 @@ body {
     z-index: 10;
     background: #fff;
     border: 3px solid #000;
-      min-height: 300vh; /* Чтобы было куда скроллить для параллакса */
+      min-height: 500vh; /* Чтобы было куда скроллить для параллакса */
 
 	
     /* Чтобы текст не прятался под фиксированной шапкой в начале: */
