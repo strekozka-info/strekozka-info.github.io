@@ -93,7 +93,7 @@ body {background-color: #FFF;
     border: none;
     margin: 0 auto;
     /* ГРАДИЕНТ: прозрачный -> розовый -> прозрачный */
-    background: linear-gradient(to right, transparent, #F32A77, transparent);
+    background: linear-gradient(to right, transparent, #000, transparent);
 
     /* Чтобы линия легла ТОЧНО на стык с шапкой: */
     position: relative;
