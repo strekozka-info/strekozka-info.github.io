@@ -42,11 +42,16 @@ body {background-color: #FFF7;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); /* Центровка */
-    font-size: 3.4vw;
+	
+    font-size: 5.4vw;
     color: #FFF;
+	
     font-family: 'Consolas', monospace;
     white-space: nowrap; /* В одну строку */
 }
+
+	
+
 
 /* ФОН 2 (Поверх текста) */
 #W2 {
@@ -103,8 +108,5 @@ body {background-color: #FFF7;
 	
 }
 
-/* стили для текста и лого */
-#top h1 { font-size: 3.4vw; color: #f32a76; font-family: 'Consolas', monospace; }
-#top .main-logo { height: 2.5vw; width: auto; }
 
 
