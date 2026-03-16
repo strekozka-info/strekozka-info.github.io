@@ -39,7 +39,7 @@ body {background-color: #FFF7;
 /* ТЕКСТ (Посередине) */
 #top h1 {
     z-index: 2;
-    top: 60%;
+    top: 80%;
     left: 50%;
     transform: translate(-50%, -50%); /* Центровка */
 	
