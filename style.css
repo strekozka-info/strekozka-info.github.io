@@ -17,6 +17,11 @@ body {
     aspect-ratio: 2560 / 731;
     z-index: 100;
     overflow: hidden;
+
+
+ transition: transform 0.1s ease-out; /* Сглаживает рывки колеса мыши */
+    will-change: transform; /* Подсказывает видеокарте, что блок будет двигаться */
+	
 }
 
 /* Все слои внутри делаем абсолютными, чтобы лежали друг на друге */
