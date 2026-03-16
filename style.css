@@ -5,7 +5,7 @@
     margin: 0;     padding: 0;     box-sizing: border-box; }
 
 body {
-    min-height: 300vh; /* Чтобы было куда скроллить для параллакса */
+  overflow-x: hidden;
     font-family: sans-serif;
 }
 
@@ -51,12 +51,15 @@ body {
     z-index: 10;
     background: #fff;
     border: 3px solid #000;
-    
+      min-height: 300vh; /* Чтобы было куда скроллить для параллакса */
+
+	
     /* Чтобы текст не прятался под фиксированной шапкой в начале: */
     /* Маржин равен высоте блока с такой же пропорцией */
     margin-top: calc(100vw * 731 / 2560); 
     
     padding: 20px 10vw;
+	
 }
 
 /* стили для текста и лого */
