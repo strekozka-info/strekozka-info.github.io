@@ -93,7 +93,7 @@ body {background-color: #FFF;
     border: none;
     margin: 0 auto;
     /* ГРАДИЕНТ */
-background: linear-gradient(to right, #FFF, #8B4513, #000, #000, #000, #8B4513, #FFF);
+background: linear-gradient(to right, #FFF, #F32A77 , #000, #000, #000, #F32A77 , #FFF);
 
     /* Чтобы линия легла ТОЧНО на стык с шапкой: */
     position: relative;  top: 0;
