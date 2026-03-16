@@ -39,11 +39,11 @@ body {background-color: #FFF7;
 /* ЗАГОЛОВОК -----------------  */
 #top h1 {
     z-index: 2;
-    top: 80%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -50%); /* Центровка */
 	
-    font-size: 6.4vw;
+    font-size: 7.4vw;
     color: #FFF;
 	
     font-family: 'Consolas', monospace;
