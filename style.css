@@ -88,12 +88,12 @@ body {background-color: #FFF;
 
 
 .center-line {
-    width: 70%;
+    width: 65%;
     height: 3px;
     border: none;
     margin: 0 auto;
     /* ГРАДИЕНТ */
-background: linear-gradient(to right, #FFF, #F32A77 , #000, #000, #000, #F32A77 , #FFF);
+background: linear-gradient(to right, #FFF, , #000, #000, #000, #000,  #FFF);
 
     /* Чтобы линия легла ТОЧНО на стык с шапкой: */
     position: relative;  top: 0;
