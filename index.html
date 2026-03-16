@@ -48,46 +48,6 @@
     
         </div>
 
-
-
-
-
-
-
-<script>
-window.addEventListener('load', function() {
-    const topBlock = document.getElementById('top');
-
-    window.addEventListener('scroll', () => {
-        
-      // В 1.5 раза медленнее скролла (эффект мягкого параллакса)
-	  
-const scrollDistance = topBlock.offsetHeight * 1.5; 
-        let scrolled = window.scrollY;
-        
-        if (scrolled <= scrollDistance) {
-            // Уходит ровно со скоростью скролла (1:1)
-            let percent = ((scrolled / scrollDistance) * 100).toFixed(2);
-            topBlock.style.transform = `translateY(-${percent}%)`;
-        } else {
-            topBlock.style.transform = 'translateY(-100%)';
-        }
-    });
-});
-</script>
-
-
-
-
-
-
-
-
-
-
-
-
-
     
 </body>
 </html>
