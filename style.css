@@ -17,7 +17,12 @@ body {
     aspect-ratio: 2560 / 731;
     z-index: 100;
     overflow: hidden;
-       animation: slow-hide linear;
+
+
+
+	
+  animation: slow-hide linear;
+    animation-range: 0px 500px; /* Уйдет полностью, когда проскроллишь 500px */
     animation-timeline: scroll();
 }
 
@@ -69,14 +74,24 @@ body {
     width: auto;
 }
 
+
 @keyframes slow-hide {
-    /* анимация*/
-    0% { transform: translateY(0); }
-    
-    /*  прокрутка 100% высоты шапки, 
-       она поднимется только на 70%, создавая эффект замедления */
-    100% { transform: translateY(-100%); } 
+    to { transform: translateY(-100%); } /* Уходит целиком в ноль */
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* 3. КОНТЕНТ ПОД ШАПКОЙ */
 #all {
     position: relative;
