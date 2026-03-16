@@ -10,7 +10,7 @@ body {background-color: #FFF;
   overflow-x: hidden;
     font-family: sans-serif;
 }
-
+   
 #top {
    position: relative;
     top: 0;
@@ -91,7 +91,7 @@ body {background-color: #FFF;
     width: 45%;
     height: 3px;
     border: none;
-    margin: 0 auto;
+   margin-left: 30%; 
     /* ГРАДИЕНТ */
 background: linear-gradient(to right, #FFF, #000, #000, #000, #000,  #FFF);
 
