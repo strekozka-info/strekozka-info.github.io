@@ -69,9 +69,13 @@ body {
     width: auto;
 }
 
-/* АНИМАЦИЯ УХОДА */
 @keyframes slow-hide {
-    to { transform: translateY(-80%); }
+    /* анимация*/
+    0% { transform: translateY(0); }
+    
+    /*  прокрутка 100% высоты шапки, 
+       она поднимется только на 70%, создавая эффект замедления */
+    100% { transform: translateY(-100%); } 
 }
 /* 3. КОНТЕНТ ПОД ШАПКОЙ */
 #all {
