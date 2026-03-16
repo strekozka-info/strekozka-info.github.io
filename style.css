@@ -43,7 +43,7 @@ body {background-color: #FFF7;
     left: 50%;
     transform: translate(-50%, -50%); /* Центровка */
 	
-    font-size: 7.4vw;
+    font-size: 7.0vw;
  letter-spacing: 0.08em; 
     
     /*  компенсировать отступ у последней буквы */
