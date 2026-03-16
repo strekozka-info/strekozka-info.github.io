@@ -41,11 +41,39 @@
 11111</br>11111</br>11111</br>11111</br>11111</br>11111</br>11111</br>11111</br>
     
 
+
+
+
     
     
         </div>
 
+
+
+
+
+
+
     
+    <script>
+window.addEventListener('load', function() {
+    const topBlock = document.getElementById('top');
+    const scrollDistance = 500; // Дистанция скролла в пикселях (подправь под себя)
+
+    window.addEventListener('scroll', () => {
+        let scrolled = window.scrollY;
+        
+        if (scrolled <= scrollDistance) {
+            // Плавный расчет процента ухода от 0 до 100
+            let percent = (scrolled / scrollDistance) * 100;
+            topBlock.style.transform = `translateY(-${percent}%)`;
+        } else {
+            // Жесткая фиксация вверху после прохождения дистанции
+            topBlock.style.transform = 'translateY(-100%)';
+        }
+    });
+});
+</script>
 </body>
 </html>
 
