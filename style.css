@@ -39,11 +39,17 @@ body {background-color: #FFF7;
 /* ЗАГОЛОВОК -----------------  */
 #top h1 {
     z-index: 2;
-    top: 70%;
+    top: 65%;
     left: 50%;
     transform: translate(-50%, -50%); /* Центровка */
 	
     font-size: 7.4vw;
+ letter-spacing: 0.08em; 
+    
+    /*  компенсировать отступ у последней буквы */
+    margin-right: -0.08em; 
+
+	
     color: #FFF;
 	
     font-family: 'Consolas', monospace;
