@@ -1,10 +1,12 @@
 
 
 /* 1. СБРОС СТИЛЕЙ */
-* {
-    margin: 0;     padding: 0;     box-sizing: border-box; }
+* {  margin: 0;  padding: 0; box-sizing: border-box; }
 
-body {background-color: #FFF7;
+img { display: block; max-width: 100%; }
+
+
+body {background-color: #FFF;
   overflow-x: hidden;
     font-family: sans-serif;
 }
