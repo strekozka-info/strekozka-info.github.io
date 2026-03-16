@@ -1,51 +1,66 @@
-/* сброс стилей */
-*, *::before, *::after {    margin: 0;    padding: 0;    box-sizing: border-box;}
 
-html, body {    height: 100%;    width: 100%;    -webkit-font-smoothing: antialiased; }
 
-img, picture, video, canvas, svg {    display: block;    max-width: 100%; }
+/* 1. СБРОС СТИЛЕЙ */
+* {
+    margin: 0;     padding: 0;     box-sizing: border-box; }
 
+body {
+    min-height: 300vh; /* Чтобы было куда скроллить для параллакса */
+    font-family: sans-serif;
+}
+
+/* 2. ШАПКА  */
 #top {
-    width: 100%;
-    height: 15vh;               /* 15% от высоты окна */
-    border: 3px solid #f32a76;  /* Рамка 3 пикселя */
+    position: fixed;      top: 0;     left: 0;     width: 100%;
+    
+    /* Пропорция 2560/731 */
+	    aspect-ratio: 2560 / 731; 
+    
+    z-index: 100;
+    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
+    border: 3px solid #f32a76;
+
+    /* ПАРАЛЛАКС: плавный уход вверх */
+    animation: slow-hide linear;
+    animation-timeline: scroll();
 }
 
-#top h1 {
-    font-size: 3.4vw;  
-    font-family: 'Consolas', 'Monaco', 'Ubuntu Mono', 'Liberation Mono', monospace; 
-    font-weight: 300;
-    color: #f32a76;
-    /* Интервал  */
-    letter-spacing: 0.12em;      
-    /* Убираем хвост последней буквы для идеального центра */
-    margin-right: -0.12em; 
-}
-
-#top .main-logo {
-    /* 5vw (шрифт) * 1.5 = 7.5vw */
-    height: 2.5vw;              
-    width: auto;
-}
-
-
-#all {
+/* КАРТИНКА ВНУТРИ */
+#W1 {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    min-height: 85vh; 
-    
-    border: 3px solid #000000;
-    padding: 0 10vw; /* Сокращенная запись отступов слева и справа */
-    background-color: #fff;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Уходит под текст и лого */
 }
 
+/* АНИМАЦИЯ УХОДА */
+@keyframes slow-hide {
+    to { transform: translateY(-100%); } 
+}
 
+/* 3. КОНТЕНТ ПОД ШАПКОЙ */
+#all {
+    position: relative;
+    z-index: 10;
+    background: #fff;
+    border: 3px solid #000;
+    
+    /* Чтобы текст не прятался под фиксированной шапкой в начале: */
+    /* Маржин равен высоте блока с такой же пропорцией */
+    margin-top: calc(100vw * 731 / 2560); 
+    
+    padding: 20px 10vw;
+}
 
-
-
-
+/* стили для текста и лого */
+#top h1 { font-size: 3.4vw; color: #f32a76; font-family: 'Consolas', monospace; }
+#top .main-logo { height: 2.5vw; width: auto; }
 
 
