@@ -29,15 +29,44 @@ body {
     animation-timeline: scroll();
 }
 
-/* КАРТИНКА ВНУТРИ */
-#W1 {
+/* КАРТИНКИ ВНУТРИ (Слоеный пирог) */
+#W1, #W2 {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    z-index: -1; /* Уходит под текст и лого */
+}
+
+#W1 { 
+    z-index: 1; /* Самый нижний фон */
+}
+
+#top h1 {
+    position: relative;
+    z-index: 2; /* Над фоном W1, но под туманом/сеткой W2 */
+    font-size: 3.4vw; 
+    color: #f32a76; 
+    font-family: 'Consolas', monospace; 
+}
+
+#W2 { 
+    z-index: 3; /* Ложится поверх текста (например, блики или туман) */
+    pointer-events: none; /* Чтобы клик пролетал сквозь W2 к логотипу */
+}
+
+.logo-link {
+    position: relative;
+    z-index: 10; /* Самый верхний уровень, всегда доступен для клика */
+    display: block;
+    line-height: 0;
+}
+
+#top .main-logo {
+    height: 2.5vw;
+    width: auto;
+    cursor: pointer;
 }
 
 /* АНИМАЦИЯ УХОДА */
