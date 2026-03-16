@@ -17,8 +17,7 @@ body {
     aspect-ratio: 2560 / 731;
     z-index: 100;
     overflow: hidden;
-    border: 3px solid #f32a76;
-    animation: slow-hide linear;
+       animation: slow-hide linear;
     animation-timeline: scroll();
 }
 
@@ -72,7 +71,7 @@ body {
 
 /* АНИМАЦИЯ УХОДА */
 @keyframes slow-hide {
-    to { transform: translateY(-90%); }
+    to { transform: translateY(-80%); }
 }
 /* 3. КОНТЕНТ ПОД ШАПКОЙ */
 #all {
