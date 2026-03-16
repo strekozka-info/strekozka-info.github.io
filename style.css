@@ -91,7 +91,7 @@ body {background-color: #FFF;
     width: 45%;
     height: 3px;
     border: none;
-   margin-left: 30%; 
+   margin-left: 10%; 
     /* ГРАДИЕНТ */
 background: linear-gradient(to right, #FFF, #000, #000, #000, #000,  #FFF);
 
