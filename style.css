@@ -106,13 +106,7 @@ body {background-color: #FFF;
     margin-bottom: 1.5rem;
  border-top: 3px solid #F32A77;
 
-	
-	
-    /* Чтобы текст не прятался под фиксированной шапкой в начале: */
-    /* Маржин равен высоте блока с такой же пропорцией */
-      
-    margin-top: - 3px;
-    padding: 20px 10vw;
+
 	
 }
 
