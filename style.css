@@ -43,7 +43,7 @@ body {background-color: #FFF7;
     left: 50%;
     transform: translate(-50%, -50%); /* Центровка */
     font-size: 3.4vw;
-    color: #f32a76;
+    color: #FFF;
     font-family: 'Consolas', monospace;
     white-space: nowrap; /* В одну строку */
 }
