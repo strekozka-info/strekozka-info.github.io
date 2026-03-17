@@ -3,14 +3,14 @@ const myVideos = [
     { 
         marker: 'n1', 
         url: 'https://youtube.com', 
-        title: 'Первое видео', 
+        title: '001 <br> Первое видео', 
         img: 'img/n1.jpg' 
     },
 
  { 
         marker: 'n2', 
         url: 'https://youtube.com', 
-        title: ' 001 <br>  Первое видео', 
+        title: ' 002 <br>  второе', 
         img: 'img/n1.jpg' 
     },
 
