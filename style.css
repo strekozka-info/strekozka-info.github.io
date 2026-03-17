@@ -126,10 +126,15 @@ background: linear-gradient(to right, #FFF, #000, #000, #000, #000,  #FFF);
     display: flex;
     width: 100%;
    margin-bottom: clamp(16px, 1.172vw, 30px);
-    border: 3px solid #000;
+    border: 1px solid #000;
     background: #fff;
     /* Убрали всё, что касается высоты. Пусть решает CENTER. */
 }
+.WRAPPER:first-of-type {
+  margin-top: clamp(20px, 1.563vw, 40px);
+}
+
+
 
 .CENTER {
         width: 100%;           /* Резиновая ширина */
