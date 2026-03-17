@@ -125,29 +125,25 @@ background: linear-gradient(to right, #FFF, #000, #000, #000, #000,  #FFF);
 .WRAPPER {
     display: flex;
     width: 100%;
-    align-items: stretch; /* Растягивает бока по высоте центра */
-    border: 3px solid #F32A77; /* Твой розовый бордюр на весь блок */
-}
-
-.LEFT, .RIGHT {
-    flex: 1; /* Забирают ВСЁ свободное место по бокам поровну */
-    border-left: 1px solid #ccc;
-    border-right: 1px solid #ccc;
-    padding: 20px;
+    margin-bottom: 40px;
+    border: 3px solid #F32A77;
+    background: #fff;
+    /* Убрали всё, что касается высоты. Пусть решает CENTER. */
 }
 
 .CENTER {
-    /* Чтобы высота была около 500px, ширина должна быть ~890px */
-    width: 890px; 
-    max-width: 100%; /* Чтобы не вылез за края на мобилках */
-    
-    aspect-ratio: 16 / 9; /* Пропорция видео */
-    background-color: #F32A77; /* Заливка центра */
-    
-    flex-shrink: 0; /* Запрещаем сжиматься, пока есть место */
-} 
+    width: 889px;         /* Тот самый единственный размер */
+    aspect-ratio: 16 / 9; /* Авто-высота 500px */
+    background-color: #F32A77;
+    flex-shrink: 0;       /* Не даем сжиматься */
+}
 
-
+.LEFT, .RIGHT {
+    flex: 1;              /* Тянутся вширь (в процентах) */
+    border: 1px solid #ccc;
+    padding: 20px;
+    /* Высота станет 500px автоматом, потому что они во флекс-контейнере */
+}
 
 
 
