@@ -9,8 +9,7 @@ img { display: block; max-width: 100%; }
 body {background-color: #FFF;
   overflow-x: hidden;
    
-
- font-family: 'Consolas', 'Monaco', 'Menlo', 'Ubuntu Mono', 'Liberation Mono',
+    font-family: 'Consolas', 'Monaco', 'Menlo', 'Ubuntu Mono', 'Liberation Mono', sans-serif;
 	  
 }
    
