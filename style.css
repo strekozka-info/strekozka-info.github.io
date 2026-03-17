@@ -143,9 +143,28 @@ background: linear-gradient(to right, #FFF, #000, #000, #000, #000,  #FFF);
     max-width: 889px;       min-width: 300px;  
     aspect-ratio: 16 / 9; /* Авто-высота 500px */
     background-color: #F32A77;
-    flex-shrink: 1;    /* Разрешаем сжиматься, если бока давят */
+    flex-shrink: 1;    /* Разрешаем сжиматься */
 
+
+    border: clamp(4px, 1.172vw, 30px) solid transparent;
+    box-sizing: border-box;
+
+position: relative;
+	
 }
+ /* блок заглушки -------------------------------------------------  */
+.video-box .poster {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: rgba(128, 128, 128, 0.5); /* Полупрозрачный серый */
+}
+
+
+
 
 .LEFT, .RIGHT {
     flex: 1;              /* Тянутся вширь (в процентах) */
