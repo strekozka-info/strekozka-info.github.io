@@ -40,6 +40,7 @@ body {background-color: #FFF;
 
 /* ЗАГОЛОВОК -----------------------------------------------------------------  */
 #top h1 {
+
     z-index: 2;
     top: 72%;
     left: 51%;
@@ -68,6 +69,7 @@ body {background-color: #FFF;
     z-index: 3;
     pointer-events: none; /* Пропускает клики сквозь себя */
 }
+
 
 /* ЛОГОТИП (Самый верхний) */
 .logo-link {
