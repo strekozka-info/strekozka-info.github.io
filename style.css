@@ -169,15 +169,16 @@ position: relative;
 
 
 h3 {
-    margin: 0;    position: absolute;    top: 0;    left: 0;
-    width: 100%;    z-index: 999;
+    top: 50%; 
+	left: 10%;
+	
+    margin: 0;    position: absolute;    
+    z-index: 999;
     box-sizing: border-box;
-    
-     
+         
     padding-top: clamp(15px, 2.5vw, 40px);
     padding-bottom: clamp(15px, 2.5vw, 40px);
-     padding-left: 10%;
-    padding-right: 10%;
+   padding-right: 10%;
     	
     text-align: left; 
     font-size: clamp(18px, 1.2vw + 14px, 24px); 
