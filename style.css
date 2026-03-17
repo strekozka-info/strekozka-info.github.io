@@ -132,7 +132,8 @@ background: linear-gradient(to right, #FFF, #000, #000, #000, #000,  #FFF);
 }
 
 .CENTER {
-    width: 889px;         /* Тот самый единственный размер */
+        width: 100%;           /* Резиновая ширина */
+    max-width: 889px;   
     aspect-ratio: 16 / 9; /* Авто-высота 500px */
     background-color: #F32A77;
     flex-shrink: 0;       /* Не даем сжиматься */
