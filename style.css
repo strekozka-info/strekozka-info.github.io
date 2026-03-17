@@ -142,7 +142,7 @@ background: linear-gradient(to right, #FFF, #000, #000, #000, #000,  #FFF);
         width: 100%;           /* Резиновая ширина */
     max-width: 889px;       min-width: 300px;  
     aspect-ratio: 16 / 9; /* Авто-высота 500px */
-    background-color: #F32A77;
+ 
     flex-shrink: 1;    /* Разрешаем сжиматься */
 
 
