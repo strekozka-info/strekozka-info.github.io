@@ -10,7 +10,7 @@ const myVideos = [
  { 
         marker: 'n2', 
         url: 'https://youtube.com', 
-        title: 'Первое видео', 
+        title: ' 001 <br>  Первое видео', 
         img: 'img/n1.jpg' 
     },
 
