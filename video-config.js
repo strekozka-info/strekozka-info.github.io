@@ -2,8 +2,8 @@
 const myVideos = [
     { 
         marker: 'n1', 
-        url: 'https://youtube.com', 
-        title: '001 <br> Первое видео', 
+        url: 'img-video/000.webp', 
+        title: '001 <br> Дорожная песня', 
         img: 'img/n1.jpg' 
     },
 
@@ -18,7 +18,7 @@ const myVideos = [
     { 
         marker: 'n3', 
         url: 'https://youtube.com', 
-        title: ' 003 <br>  третье комм', 
+        title: ' 003 <br>  третье ', 
         img: 'img/n2.jpg' 
     }
 
