@@ -9,7 +9,7 @@ const myVideos = [
 
  { 
         marker: 'n2', 
-        url: 'https://youtube.com', 
+        url: 'http://img-video/000.webp', 
         title: ' 002 <br>  второе', 
         img: 'img/n1.jpg' 
     },
