@@ -18,7 +18,7 @@ const myVideos = [
     { 
         marker: 'n3', 
         url: 'https://youtube.com', 
-        title: 'Второе видео', 
+        title: ' 003 <br>  третье комм', 
         img: 'img/n2.jpg' 
     }
 
