@@ -2,22 +2,22 @@
 const myVideos = [
     { 
         marker: 'n1', 
-        url: 'img-video/000.webp', 
+        url: '', 
         title: '001 <br> Дорожная песня', 
         img: 'img/n1.jpg' 
     },
 
  { 
         marker: 'n2', 
-        url: 'http://img-video/000.webp', 
-        title: ' 002 <br>  второе', 
+        url: '', 
+        title: ' 002 <br> Дорога', 
         img: 'img/n1.jpg' 
     },
 
   
     { 
         marker: 'n3', 
-        url: 'https://youtube.com', 
+        url: '', 
         title: ' 003 <br>  третье ', 
         img: 'img/n2.jpg' 
     }
