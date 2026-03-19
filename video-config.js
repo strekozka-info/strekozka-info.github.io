@@ -2,7 +2,7 @@
 const myVideos = [
     { 
         marker: 'n1', 
-        url: 'img-video/000.webp',
+        url: "https://www.youtube.com/embed/mVXXOCYSPfA?si=_XfhQOWG_zzg3IPv"  ,
         title: '001 <br> Дорожная песня', 
         img: 'img/n1.jpg' 
     },
