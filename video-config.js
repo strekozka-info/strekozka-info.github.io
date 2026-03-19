@@ -9,13 +9,13 @@ const myVideos = [
  { 
         url: 'img-video/000.webp',
         title: ' 002 <br> Дорога', 
-        img: 'img/n1.jpg' 
+        url: 'img-video/000.webp', 
     },
 
    { 
         url: 'img-video/000.webp',
         title: ' 003 <br> Дорога', 
-        img: 'img/n1.jpg' 
+        url: 'img-video/000.webp', 
     },
 
     { 
