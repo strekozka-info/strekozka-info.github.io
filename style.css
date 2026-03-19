@@ -5,9 +5,7 @@
 
 img { display: block; max-width: 100%; }
 
-iframe[src$=".webp"], iframe[src$=".png"] {
-    overflow: hidden;    object-fit: cover;    object-position: center; 
-    border: none;    display: block;    width: 100%;    height: 100%;}
+
 
 body {background-color: #FFF;
   overflow-x: hidden;
