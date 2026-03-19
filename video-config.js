@@ -7,7 +7,7 @@ const myVideos = [
     },
 
  { 
-        url: 'img-video/000.webp',
+        url: '#',
         title: ' 002 <br> Дорога', 
         img:'img-video/000.webp', 
     },
@@ -21,7 +21,7 @@ const myVideos = [
     { 
         url: 'img-video/000.webp',
         title: ' 004 <br>  третье ', 
-        img: 'img/n2.jpg' 
+         img: 'img-video/000.webp', 
     }
 
 
