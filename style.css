@@ -135,8 +135,8 @@ background: linear-gradient(to right, #FFF, #000, #000, #000, #000,  #FFF);
 
 
 .CENTER {
-   --gap: clamp(0px, 15vw - 75px, 60px);/* Выносим зазор в переменную */
-
+ 
+--gap: clamp(0px, 8vw - 40px, 60px);
     width: 100%;
     max-width: 889px;
     aspect-ratio: 16 / 9;
