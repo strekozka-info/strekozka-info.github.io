@@ -134,21 +134,26 @@ background: linear-gradient(to right, #FFF, #000, #000, #000, #000,  #FFF);
 }
 
 
-
 .CENTER {
-        width: 100%;           /* Резиновая ширина */
-    max-width: 889px;       min-width: 300px;  
-    aspect-ratio: 16 / 9; /* Авто-высота 500px */
- 
-    flex-shrink: 1;    /* Разрешаем сжиматься */
+    --gap: clamp(4px, 1.172vw, 30px); /* Выносим твой зазор в переменную */
 
-
-    border: clamp(4px, 1.172vw, 30px) solid transparent;
+    width: 100%;
+    max-width: 889px;
+    aspect-ratio: 16 / 9;
     box-sizing: border-box;
 
-position: relative;
-	
+    /* Рамка по бокам полная, а сверху/снизу — пропорциональная */
+    padding: calc(var(--gap) * 9 / 16) var(--gap); 
+    
+    background-clip: content-box; /* Чтобы фон не залезал на паддинги */
+    position: relative;
+    overflow: hidden;
 }
+
+
+
+
+
  /* блок заглушки -------------------------------------------------  */
 .video-box .poster {
     position: absolute;
