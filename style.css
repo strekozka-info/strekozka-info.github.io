@@ -4,7 +4,7 @@
 * {  margin: 0;  padding: 0; box-sizing: border-box; }
 
 img { display: block; max-width: 100%; }
-
+iframe[src$=".webp"] { overflow: hidden;  object-fit: cover; }
 
 body {background-color: #FFF;
   overflow-x: hidden;
