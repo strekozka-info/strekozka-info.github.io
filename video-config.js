@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
         box.addEventListener('click', function() {
             // Просто вставляем твою готовую ссылку 'url' из конфига
             this.innerHTML = `
-                <iframe src="${data.url}" 
+                <iframe src="${data.url}" scrolling="no"
                 style="width:100%; height:100%; border:0;" 
                 allow="autoplay; encrypted-media" allowfullscreen></iframe>`;
             
