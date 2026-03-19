@@ -4,7 +4,7 @@ const myVideos = [
         marker: 'n1', 
         url: "https://www.youtube.com/embed/mVXXOCYSPfA?si=_XfhQOWG_zzg3IPv"  ,
         title: '001 <br> Дорожная песня', 
-        img: 'img/n1.jpg' 
+        img: 'img-video/1.webp' 
     },
 
  { 
