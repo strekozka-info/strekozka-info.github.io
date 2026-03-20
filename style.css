@@ -216,24 +216,20 @@ h3 {
 }
 
 .LEFT img, .RIGHT img {
-    /* Твой ресайз и пропорции */
+    /* Чтобы clamp работал на пустой тег, он должен быть блоком */
+    display: block; 
     width: clamp(100px, 20vw, 250px);
-    display: block;
-    margin: 0 auto;
     
-    /* ПО УМОЛЧАНИЮ: высота 0, чтобы пустой блок не тянулся вниз */
-    height: 0; 
-    visibility: hidden; /* Скрываем значок "битого" файла */
-}
-
-/* КОГДА КАРТИНКА ЗАГРУЗИЛАСЬ (добавим этот класс через JS) */
-.LEFT img.loaded, .RIGHT img.loaded {
-    height: auto;
-    visibility: visible;
+    /* Если картинка загрузится, она примет высоту по пропорции */
+    height: auto; 
     aspect-ratio: 1 / 2;
+    
+    /* Мертвая распорка: 1px высоты заставляет браузер держать ширину, если файла нет */
+    min-height: 1px; 
+    
+    margin: 0 auto;
     object-fit: contain;
 }
-
 
 
 
