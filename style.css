@@ -257,8 +257,7 @@ h3 {
     /* Ресайз знака: на мобилках 30px, на мониторах до 60px */
     font-size: clamp(30px, 5vw, 60px);
     display: inline-block;
-	margin-bottom: 20px;
--webkit-font-smoothing: antialiased;
+	-webkit-font-smoothing: antialiased;
     transform: scale(3.3, 1.2);
 }
 
@@ -269,8 +268,7 @@ footer {
     width: 100%;      
     
     height: clamp(10px, 2vw, 30px); 
-    
-    margin-top: 0vw; box-sizing: border-box; 
+    margin-top: -10px;     box-sizing: border-box; 
 }
 
 
