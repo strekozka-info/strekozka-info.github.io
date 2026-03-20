@@ -260,8 +260,8 @@ h3 {
 	margin-bottom: 10px;
    }
 
-.arrow-box: span {
-    transform scale(4.7); 
+.arrow-box span {
+    transform: scale(4.7); 
 }
 
 
