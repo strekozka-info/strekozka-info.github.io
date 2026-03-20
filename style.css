@@ -221,11 +221,5 @@ h3 {
     aspect-ratio: 1 / 2;
     margin: 0 auto;
     object-fit: contain;
-    /* Больше никаких хаков с высотой или видимостью не нужно */
+    /* УДАЛИ ВСЁ ОСТАЛЬНОЕ ОТСЮДА */
 }
-
-
-.LEFT img.loaded, .RIGHT img.loaded {
-    content: normal;
-}
-
