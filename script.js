@@ -10,19 +10,20 @@ document.addEventListener('DOMContentLoaded', () => {
     rows.forEach((row, index) => {
         const n = index + 1; 
         
-       const addIcon = (selector, prefix) => {
+    const addIcon = (selector, prefix) => {
     const block = row.querySelector(selector);
     if (!block) return;
 
     const img = document.createElement('img');
     img.src = `img-video/${prefix}${n}.webp`;
     
-    // ОДНА СТРОКА: когда файл загружен, убираем "заглушку" из CSS
-    img.onload = function() { this.classList.add('loaded'); };
+    // Если файла нет — подставляем пустую картинку-распорку
+    img.onerror = function() { 
+        this.src = 'img-video/blank.webp'; 
+    };
 
     block.prepend(img);
 };
-
 
 /* ============================================================
    ЗАГРУЗКА ТЕКСТА ИЗ JSON (БОКОВЫЕ КОЛОНКИ L и R)
