@@ -249,7 +249,7 @@ h3 {
     cursor: pointer;
     /* Убираем высоту строки, чтобы треугольник не создавал пустую дыру */
     line-height: 0; 
-    margin-bottom: -5px; /* Чуть «притираем» к синему футеру */
+    margin-bottom: 5px; /* Чуть «притираем» к синему футеру */
 }
 
 .arrow-box span {
@@ -261,7 +261,7 @@ h3 {
    }
 
 .arrow-box: span {
-    transform: scale(4.7); /* Легкий отклик при наведении */
+    transform scale(4.7); 
 }
 
 
