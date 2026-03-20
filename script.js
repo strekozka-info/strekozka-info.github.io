@@ -17,12 +17,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const img = document.createElement('img');
             img.src = `img-video/${prefix}${n}.webp`;
-            
-            // Если картинки в папке нет — просто удаляем этот тег, чтобы не мешал
-            img.onerror = function() { 
-                this.remove(); 
-            };
 
+
+
+img.style.width = '250px'; 
+img.style.height = '0px';
+           
+        
             // Вставляем картинку в начало блока (перед текстом "Инфо" или "Коммент")
             block.prepend(img);
         };
