@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 img.style.width = '250px'; 
 img.style.height = '0px';
-           
+           img.onload = function() { this.style.height = 'auto'; };
         
             // Вставляем картинку в начало блока (перед текстом "Инфо" или "Коммент")
             block.prepend(img);
