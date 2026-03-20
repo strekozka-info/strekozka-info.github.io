@@ -142,7 +142,9 @@ background: linear-gradient(to right, #FFF, #000, #000, #000, #000,  #FFF);
 
 
 	
---gap: clamp(0px, 20vw - 240px, 60px);
+
+	--gap: clamp(0px, 8vw - 40px, 60px);
+	--gap: clamp(0px, 12.5vw - 148px, 60px);
     width: 100%;
     max-width: 889px;
     aspect-ratio: 16 / 9;
