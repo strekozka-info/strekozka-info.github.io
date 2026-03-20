@@ -66,6 +66,20 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
+/* ============================================================
+   КНОПКА ПЕРЕМОТКИ НАВЕРХ (SCROLL TO TOP)
+   ============================================================ */
+document.addEventListener('DOMContentLoaded', () => {
+    const btnUp = document.querySelector('.arrow-box');
 
+    if (btnUp) {
+        btnUp.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth' // Плавный полет наверх
+            });
+        });
+    }
+});
 
 
