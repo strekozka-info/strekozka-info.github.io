@@ -9,22 +9,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
     rows.forEach((row, index) => {
         const n = index + 1; 
-        
-    const addIcon = (selector, prefix) => {
+   const addIcon = (selector, prefix) => {
     const block = row.querySelector(selector);
     if (!block) return;
 
     const img = document.createElement('img');
-    img.src = `img-video/${prefix}${n}.webp`;
     
-    // Если файла нет — подставляем пустую картинку-распорку
+    // Если картинка не загрузится — ставим прозрачный пиксель (Base64)
+    // Он заставит работать clamp и уберет иконку ошибки
     img.onerror = function() { 
-        this.src = 'img-video/blank.webp'; 
+        this.src = "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7";
     };
 
+    img.src = `img-video/${prefix}${n}.webp`;
     block.prepend(img);
 };
-
 /* ============================================================
    ЗАГРУЗКА ТЕКСТА ИЗ JSON (БОКОВЫЕ КОЛОНКИ L и R)
    ============================================================ */
