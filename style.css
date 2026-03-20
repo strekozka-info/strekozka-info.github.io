@@ -242,7 +242,7 @@ h3 {
 
 
 
-/* КНОПКА ПЕРЕМОТКИ НАВЕРХ (В ПОТОКЕ) ------------------ */
+/* КНОПКА ПЕРЕМОТКИ НАВЕРХ  ------------------ */
 .arrow-box {
     text-align: center;
     width: 100%;
@@ -268,7 +268,7 @@ footer {
     width: 100%;      
     
     height: clamp(10px, 2vw, 30px); 
-    margin-top: -10px;     box-sizing: border-box; 
+    margin-top: -16px;     box-sizing: border-box; 
 }
 
 
