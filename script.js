@@ -10,21 +10,18 @@ document.addEventListener('DOMContentLoaded', () => {
     rows.forEach((row, index) => {
         const n = index + 1; 
         
-        const addIcon = (selector, prefix) => {
-            const block = row.querySelector(selector);
-            if (!block) return;
+       const addIcon = (selector, prefix) => {
+    const block = row.querySelector(selector);
+    if (!block) return;
 
-            const img = document.createElement('img');
-            img.src = `img-video/${prefix}${n}.webp`;
-            
-         
-            block.prepend(img);
-        };
+    const img = document.createElement('img');
+    img.src = `img-video/${prefix}${n}.webp`;
+    
+    // ОДНА СТРОКА: когда файл загружен, убираем "заглушку" из CSS
+    img.onload = function() { this.classList.add('loaded'); };
 
-        addIcon('.LEFT', 'l');   
-        addIcon('.RIGHT', 'r');  
-    });
-});
+    block.prepend(img);
+};
 
 
 /* ============================================================
