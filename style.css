@@ -258,10 +258,8 @@ h3 {
     font-size: clamp(30px, 5vw, 60px);
     display: inline-block;
 	margin-bottom: 10px;
-   }
 
-.arrow-box span {
-    transform: scale(4.7); 
+    transform: scale(8, 4);
 }
 
 
