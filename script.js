@@ -1,7 +1,6 @@
 
 
 
-
 /* ============================================================
    АВТОРАССТАНОВКА КАРТИНОК (L1, R1, L2, R2...) В КОЛОНКИ
    ============================================================ */
@@ -9,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const rows = document.querySelectorAll('.WRAPPER');
 
     rows.forEach((row, index) => {
-        const n = index + 1; // Номер ряда по порядку в HTML
+        const n = index + 1; 
         
         const addIcon = (selector, prefix) => {
             const block = row.querySelector(selector);
@@ -17,24 +16,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const img = document.createElement('img');
             img.src = `img-video/${prefix}${n}.webp`;
+            
+            // Если файл найден — CSS через этот класс вернет высоту и покажет фото
+            img.onload = function() { 
+                this.classList.add('loaded'); 
+            };
 
-
-
-img.style.width = '250px'; 
-img.style.height = '0px';
-           img.onload = function() { this.style.height = 'auto'; };
-        
-            // Вставляем картинку в начало блока (перед текстом "Инфо" или "Коммент")
             block.prepend(img);
         };
 
-        addIcon('.LEFT', 'l');   // Ищем l1.webp, L2.webp...
-        addIcon('.RIGHT', 'r');  // Ищем r1.webp, R2.webp...
+        addIcon('.LEFT', 'l');   
+        addIcon('.RIGHT', 'r');  
     });
 });
-
-
-
 
 
 /* ============================================================
