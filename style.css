@@ -219,7 +219,7 @@ h3 {
     display: block; 
     /* Твой ресайз: работает всегда, даже на прозрачном пикселе */
     width: clamp(100px, 20vw, 250px);
-    
+     min-width: 100px;
     /* Пропорция 250/500 = 1/2 */
     aspect-ratio: 1 / 2; 
     height: auto;
