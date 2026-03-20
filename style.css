@@ -217,9 +217,13 @@ h3 {
 
 .LEFT img, .RIGHT img {
     display: block; 
+    /* Твой ресайз: работает всегда, даже на прозрачном пикселе */
     width: clamp(100px, 20vw, 250px);
-    aspect-ratio: 1 / 2;
+    
+    /* Пропорция 250/500 = 1/2 */
+    aspect-ratio: 1 / 2; 
+    height: auto;
+    
     margin: 0 auto;
     object-fit: contain;
-    /* УДАЛИ ВСЁ ОСТАЛЬНОЕ ОТСЮДА */
 }
