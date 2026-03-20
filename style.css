@@ -268,7 +268,7 @@ footer {
     width: 100%;      
     
     height: clamp(10px, 2vw, 30px); 
-    margin-top: 6px;     box-sizing: border-box; 
+    margin-top: 16px;     box-sizing: border-box; 
 }
 
 
