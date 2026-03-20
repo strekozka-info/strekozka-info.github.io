@@ -17,11 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const img = document.createElement('img');
             img.src = `img-video/${prefix}${n}.webp`;
             
-            // Если файл найден — CSS через этот класс вернет высоту и покажет фото
-            img.onload = function() { 
-                this.classList.add('loaded'); 
-            };
-
+         
             block.prepend(img);
         };
 
