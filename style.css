@@ -135,7 +135,13 @@ background: linear-gradient(to right, #FFF, #000, #000, #000, #000,  #FFF);
 
 
 .CENTER {   
- 
+ flex: 1 1 auto;      /* Позволяет блоку гибко сжиматься и расти */
+    min-width: 0;        /* Снимает ограничение, чтобы блок не резался */
+    height: auto;
+
+
+
+	
 --gap: clamp(0px, 8vw - 40px, 60px);
     width: 100%;
     max-width: 889px;
