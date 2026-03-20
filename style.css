@@ -247,9 +247,9 @@ footer {
     background: #2A80C0; 
     width: 100%;      
     
-    height: clamp(30px, 6vw, 80px); 
+    height: clamp(10px, 6vw, 30px); 
     
-    margin-top: 4vw; box-sizing: border-box; 
+    margin-top: 0vw; box-sizing: border-box; 
 }
 
 
