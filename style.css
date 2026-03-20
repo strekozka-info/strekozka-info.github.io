@@ -242,6 +242,29 @@ h3 {
 
 
 
+/* КНОПКА ПЕРЕМОТКИ НАВЕРХ (В ПОТОКЕ) ------------------ */
+.arrow-box {
+    text-align: center;
+    width: 100%;
+    cursor: pointer;
+    /* Убираем высоту строки, чтобы треугольник не создавал пустую дыру */
+    line-height: 0; 
+    margin-bottom: -5px; /* Чуть «притираем» к синему футеру */
+}
+
+.arrow-box span {
+    color: #2A80C0; /* Твой синий */
+    /* Ресайз знака: на мобилках 30px, на мониторах до 60px */
+    font-size: clamp(30px, 5vw, 60px);
+    display: inline-block;
+    transition: transform 0.2s;
+}
+
+.arrow-box:hover span {
+    transform: scale(1.1); /* Легкий отклик при наведении */
+}
+
+
  /*          футер -------------------------------------------------  */
 footer {
     background: #2A80C0; 
