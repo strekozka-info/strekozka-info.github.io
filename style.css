@@ -229,8 +229,14 @@ h3 {
     
     margin: 0 auto;
     object-fit: contain;
+
+ content: ""; 
+
+	
 }
 
 
-
+.LEFT img.loaded, .RIGHT img.loaded {
+    content: normal;
+}
 
