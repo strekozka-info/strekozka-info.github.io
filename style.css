@@ -221,7 +221,7 @@ h3 {
 
  /* 1. Ресайз: макс. ширина 250px  */
     width: clamp(100px, 20vw, 250px); 
-        min-width: clamp(140px, calc(20vw + 40px), 290px);
+        min-width: 250px;
     /* 2. Пропорция: 250/500 упрощается до 1/2 (или 0.5) */
     aspect-ratio: 1 / 2; 
 
