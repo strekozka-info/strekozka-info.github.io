@@ -217,7 +217,7 @@ h3 {
 
 
 .LEFT, .RIGHT {
-    flex: 1;  border: 0px solid #ccc;     padding: 0px;   aspect-ratio: 1 / 2; }
+    flex: 1;  border: 0px solid #ccc;     padding: 0px;   }
 
  /* блоки левый правый картинки -------------------------------------------------  */
 .LEFT img, .RIGHT img {
