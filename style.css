@@ -268,7 +268,8 @@ footer {
     width: 100%;      
     
     height: clamp(10px, 2vw, 30px); 
-    border-block: 4px solid #fff;    box-sizing: border-box; 
+    border-block: 4px solid #fff;    box-sizing: border-box;   position: relative;
+    z-index: 1;
 }
 
 
