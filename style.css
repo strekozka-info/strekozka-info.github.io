@@ -233,7 +233,7 @@ h3 {
 
     /* Ресайз шрифта  */
                              font-size: clamp(14px, 1vw + 10px, 24px);
-                         font-style: italic;
+                         font-style: italic;  letter-spacing: -0.02em;
 color: #1A4567; 
 	
     line-height: 1.3;
