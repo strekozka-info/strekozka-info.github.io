@@ -15,7 +15,7 @@
     box-sizing: content-box; 
     
     /* Анимация расширения */
-animation: expandCircle 1.5s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+animation: expandCircle 1.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
 
 }
 
@@ -50,7 +50,7 @@ animation: expandCircle 1.5s cubic-bezier(0.22, 1, 0.36, 1) forwards;
     z-index: 9999;
     
     /* Анимация скрытия самого контейнера в конце */
-    animation: fadeOut 0.1s ease 1.5s forwards;
+    animation: fadeOut 0.1s ease 1.8s forwards;
 }
 
 @keyframes fadeOut {
