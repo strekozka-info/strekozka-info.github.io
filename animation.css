@@ -1,58 +1,63 @@
 
+.loader-circle {
+    /* Начальное состояние: маленький прозрачный круг */
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border-radius: 50%;
+    
+    /* Огромная рамка цвета фона, которая закрывает всё вокруг */
+    /* Используем 100vmax, чтобы гарантированно перекрыть экран любого размера */
+    border: 100vmax solid #3688D1; 
+    
+    /* Центрирование внутри flex-контейнера */
+    position: absolute;
+    box-sizing: content-box; 
+    
+    /* Анимация расширения */
+    animation: expandCircle 1.5s ease-in-out forwards;
+}
+
+@keyframes expandCircle {
+    0% {
+        width: 50px;
+        height: 50px;
+        /* Рамка плотно прилегает */
+        border-width: 100vmax;
+    }
+    100% {
+        /* Расширяем внутреннюю часть до размеров экрана */
+        width: 150vmax; 
+        height: 150vmax;
+        /* Рамка уходит за пределы видимости */
+        border-width: 0;
+    }
+}
+
 #preloader {
-    /* Фиксируем на весь экран */
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100vh;
-    
-    /* Центрируем содержимое */
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    /* Фон и защита от вылетов */
-    background-color: #3688D1; /* или ваш цвет */
+    /* Убираем фоновый цвет здесь, так как его заменяет border круга */
+    background-color: transparent; 
     overflow: hidden; 
     z-index: 9999;
-
-    overflow-x: hidden;  overflow-y: hidden;
-    /* Запускаем анимацию исчезновения */
-
-    animation: fadeOut 1.0s ease 0s forwards;
-
     
+    /* Анимация скрытия самого контейнера в конце */
+    animation: fadeOut 0.1s ease 1.5s forwards;
 }
 
 @keyframes fadeOut {
-    0% {
-        opacity: 0.9;
-        visibility: visible;
-    }
-    99% {
-        opacity: 0.9;
-        visibility: visible; 
-    }
-
-    
-    100% {
+    to {
         opacity: 0;
-        visibility: hidden; /* Элемент полностью исчезает для взаимодействия */
+        visibility: hidden;
     }
 }
-
-
-
-
-
-.loader-circle {
-    width: 50px;
-    height: 50px;
-    border: 5px solid #f3f3f3;
-    border-top: 5px solid #3498db;
-    border-radius: 50%;
-
 
 
 
