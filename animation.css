@@ -32,6 +32,7 @@ animation: expandCircle 1.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
         height: 250vmax;
         border-width: 0;
     }
+}
 
 #preloader {
     position: fixed;
