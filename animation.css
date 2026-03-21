@@ -30,7 +30,7 @@
         visibility: visible;
     }
     99% {
-        opacity: 0.7;
+        opacity: 1;
         /* visibility позволяет «прокликивать» сквозь элемент, аналог display: none */
         visibility: visible; 
     }
