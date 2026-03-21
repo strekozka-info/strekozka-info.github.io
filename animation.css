@@ -15,7 +15,8 @@
     box-sizing: content-box; 
     
     /* Анимация расширения */
-    animation: expandCircle 1.5s ease-in-out forwards;
+animation: expandCircle 1.5s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+
 }
 
 @keyframes expandCircle {
