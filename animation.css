@@ -16,7 +16,44 @@
     background-color: #3688D1; /* или ваш цвет */
     overflow: hidden; 
     z-index: 9999;
+
+    /* Запускаем анимацию исчезновения */
+
+    animation: fadeOut 1.5s ease 0s forwards;
+
+    
 }
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+        visibility: visible;
+    }
+    99% {
+        opacity: 0;
+        /* visibility позволяет «прокликивать» сквозь элемент, аналог display: none */
+        visibility: visible; 
+    }
+    100% {
+        opacity: 0;
+        visibility: hidden; /* Элемент полностью исчезает для взаимодействия */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .loader-circle {
     width: 50px;
