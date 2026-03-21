@@ -26,12 +26,11 @@
 
 @keyframes fadeOut {
     0% {
-        opacity: 1;
+        opacity: 0.9;
         visibility: visible;
     }
     99% {
-        opacity: 1;
-        /* visibility позволяет «прокликивать» сквозь элемент, аналог display: none */
+        opacity: 0.9;
         visibility: visible; 
     }
 
@@ -46,20 +45,15 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 .loader-circle {
     width: 50px;
     height: 50px;
     border: 5px solid #f3f3f3;
     border-top: 5px solid #3498db;
     border-radius: 50%;
+
+
+
+
+
+    
