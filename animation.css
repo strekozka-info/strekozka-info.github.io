@@ -15,13 +15,13 @@
     box-sizing: content-box; 
     
     /* Анимация расширения */
-animation: expandCircle 1.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+animation: expandCircle 2.0s cubic-bezier(0.22, 1, 0.36, 1) forwards;
 
 }
 
 @keyframes expandCircle {
     /* Первые 300мс (17%) круг стоит на месте, создавая паузу */
-    0%, 17% {
+    0%, 25% {
         width: 1px;
         height: 1px;
         border-width: 100vmax;
@@ -49,7 +49,7 @@ animation: expandCircle 1.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
     z-index: 9999;
     
     /* Анимация скрытия самого контейнера в конце */
-    animation: fadeOut 0.1s ease 1.8s forwards;
+    animation: fadeOut 0.1s ease 2.0s forwards;
 }
 
 @keyframes fadeOut {
