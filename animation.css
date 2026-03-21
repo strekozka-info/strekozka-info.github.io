@@ -20,20 +20,18 @@ animation: expandCircle 1.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
 }
 
 @keyframes expandCircle {
-    0% {
+    /* Первые 300мс (17%) круг стоит на месте, создавая паузу */
+    0%, 17% {
         width: 1px;
         height: 1px;
-        /* Рамка плотно прилегает */
         border-width: 100vmax;
     }
+    /* Оставшееся время идет расширение */
     100% {
-        /* Расширяем внутреннюю часть до размеров экрана */
-        width: 150vmax; 
-        height: 150vmax;
-        /* Рамка уходит за пределы видимости */
+        width: 250vmax; /* Увеличил до 250, чтобы точно не было углов */
+        height: 250vmax;
         border-width: 0;
     }
-}
 
 #preloader {
     position: fixed;
