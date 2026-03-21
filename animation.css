@@ -17,6 +17,7 @@
     overflow: hidden; 
     z-index: 9999;
 
+    overflow-x: hidden;  overflow-y: hidden;
     /* Запускаем анимацию исчезновения */
 
     animation: fadeOut 1.0s ease 0s forwards;
