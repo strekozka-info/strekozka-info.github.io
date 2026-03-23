@@ -240,9 +240,8 @@ color: #1A4567;
 
 
 .LEFT span { font-family: 'IBM', sans-serif;   font-style: italic;  padding-top: 1vw;   }
-
-
-.RIGHT span{   font-family: 'IBM', sans-serif;   font-style: normal;  padding-top: 4vw; }         
+.RIGHT span{   font-family: 'IBM', sans-serif;   font-style: normal;  padding-top: 4vw; } 
+.LEFT span img, .RIGHT span img {  padding: 0;  }
 
 /* КНОПКА ПЕРЕМОТКИ НАВЕРХ  ------------------ */
 .arrow-box {
