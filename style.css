@@ -39,25 +39,29 @@ body {background-color: #FFF;
 }
 
 /* ЗАГОЛОВОК -----------------------------------------------------------------  */
-#top h1 {
 
-    z-index: 2;
-    top: 72%;
-    left: 51%;
-    transform: translate(-50%, -50%); /* Центровка */
-	
-    font-size: 7.0vw;
- letter-spacing: 0.08em; 
-    
-    /*  компенсировать отступ у последней буквы */
-    margin-right: -0.08em; 
-	
-    color: #FFF;
 
-    white-space: nowrap; /* В одну строку */
+	#top h1 {    z-index: 2;   top: 72%;   left: 51%;
+    transform: translate(-50%, -50%);
+    font-size: 7.0vw;   color: #FFF;   white-space: nowrap;
+
+    /* Начальное состояние до старта анимации */
+    letter-spacing: -0.1em;
+
+    /* Настройки: имя, длительность, задержка, плавность, фиксация финала */
+    animation: spacingMove 0.8s ease-out 0s forwards;
 }
 
-	
+@keyframes spacingMove {
+    from {
+     letter-spacing: -0.01em;
+        margin-right: -0.01em;
+    }
+    to {
+        letter-spacing: 0.08em;
+        margin-right: -0.08em;
+    }
+}
 
 
 /* ФОН 2 (Поверх текста) */
