@@ -1,13 +1,14 @@
 <!DOCTYPE html> <html lang="ru">
 <head> <meta charset="UTF-8">
 
-    
+    <link rel="canonical" href="https://strekozka-info.github.io/">
    <title>Welcome to Strekozka</title>
 
 
 
       <link rel="stylesheet" href="animation.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="pages/style.css">
     
     <script src="video-config.js" defer></script>
     <script src="script.js" defer></script> 
@@ -34,10 +35,27 @@
     <!-- 3. Слой поверх текста, но под логотипом -->
     <img src="W2.webp" id="W2" alt="Overlay">
 
-    <!-- 4. Самый верхний слой (кликабельный) -->
-    <a href="/" class="logo-link">
-        <img src="favicon.png" alt="Logo" class="main-logo">
-    </a>
+    <!-- 4. ЗНАЧКИ МЕНЮ -->
+    
+<div id="sprite">
+
+    
+	<div class="column">    <a data-url="pages/info.html">      <div id="player1" class="sprite-link   flash-once"></div>    </a></div>
+
+   <div class="column">    <a data-url="pages/foto.html">       <div id="player2" class="sprite-link  flash-once"></div>    </a></div>
+
+   <div class="column">    <a data-url="pages/glossary.html">       <div id="player3" class="sprite-link  flash-once"></div>    </a></div>
+
+  <div class="column">    <a data-url="pages/license.html">        <div id="player4" class="sprite-link  flash-once"></div>    </a></div>
+  
+  <div class="column">    <a data-url="pages/author.html">        <div id="player5" class="sprite-link  flash-once"></div>    </a></div>
+
+
+
+</div>
+
+
+
 </div>
        
 

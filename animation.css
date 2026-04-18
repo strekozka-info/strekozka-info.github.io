@@ -1,23 +1,10 @@
 
-.loader-circle {
-    /* Начальное состояние: маленький прозрачный круг */
-    width: 1px;
-    height: 1px;
-    background: transparent;
-    border-radius: 50%;
-    
-    /* Огромная рамка цвета фона, которая закрывает всё вокруг */
-    /* Используем 100vmax, чтобы гарантированно перекрыть экран любого размера */
-    border: 100vmax solid #3688D1; 
-    
-    /* Центрирование внутри flex-контейнера */
-    position: absolute;
-    box-sizing: content-box; 
-    
-    /* Анимация расширения */
-animation: expandCircle 2.0s cubic-bezier(0.22, 1, 0.36, 1) forwards;
 
-}
+/*   ---------------   СТАРТОВАЯ АНИМАЦИЯ  -----------        */
+
+.loader-circle {        width: 1px;    height: 1px;    background: transparent;    border-radius: 50%;
+        border: 100vmax solid #3688D1;       position: absolute;    box-sizing: content-box; 
+       animation: expandCircle 2.0s cubic-bezier(0.22, 1, 0.36, 1) forwards;  }
 
 @keyframes expandCircle {
     /* Первые 300мс (17%) круг стоит на месте, создавая паузу */
@@ -28,7 +15,7 @@ animation: expandCircle 2.0s cubic-bezier(0.22, 1, 0.36, 1) forwards;
     }
     /* Оставшееся время идет расширение */
     100% {
-        width: 250vmax; /* Увеличил до 250, чтобы точно не было углов */
+        width: 250vmax;                /*  ---------------------------            */
         height: 250vmax;
         border-width: 0;
     }
@@ -60,6 +47,293 @@ animation: expandCircle 2.0s cubic-bezier(0.22, 1, 0.36, 1) forwards;
 }
 
 
+/*   ---------------    АНИМАЦИЯ ИКОНОК   -----------        */
+
+#sprite {    
+    position: absolute; 
+    z-index: 3;   
+    width: 100%;   
+    height: 100%;    
+    display: flex;   
+     justify-content: space-evenly;  
+}
+
+#sprite .column {    width:    3.4vw;        height:   3.4vw;               }      /*   --------------------------    */
 
 
+#sprite .column a{     cursor: pointer;             }     
+
+
+
+
+
+.sprite-link {     width: 100%;         height: 100%;      background-image: url('sprite.webp');
+    background-size: 500% 100%;    background-repeat: no-repeat;   }
+
+
+/*   --------------------------    */
+
+
+
+
+#player1 {
+  margin-top: 4vw;  background-position: 0% 0;  animation: 
+
+    rotation-player1 30s steps(1) infinite 0s, 
+    float 30s cubic-bezier(0.45, 0, 0.55, 1) infinite -3s;
+
+}
+
+#player2 {
+  margin-top: 6vw;  background-position: 0% 0;   animation: 
+
+    rotation-player2 30s steps(1) infinite -18s, 
+    float 30s cubic-bezier(0.45, 0, 0.55, 1) infinite -18s;
+
+}
+
+
+#player3 {
+  margin-top: 4vw;  background-position: 50% 0;   animation: 
+
+    rotation-player3 30s steps(1) infinite -2s, 
+    float 30s cubic-bezier(0.45, 0, 0.55, 1) infinite -2s;
+
+}
+
+
+
+
+#player4 {
+  margin-top: 4vw;  background-position: 75% 0;   animation: 
+
+    rotation-player4 30s steps(1) infinite -2s, 
+    float 30s cubic-bezier(0.45, 0, 0.55, 1) infinite -12s;
+
+}
+
+
+
+#player5 {
+  margin-top: 4vw;  background-position: 100% 0;   animation: 
+  rotation-player5 30s steps(1) infinite -1s, 
+  float 30s cubic-bezier(0.45, 0, 0.55, 1) infinite 1s;
+
+}
+
+
+
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(7vw); }         
+    100% { transform: translateY(0); }
+}
+ 
+
+/*        -------------------     */
+
+
+@keyframes rotation-player1 {
+    /* 0с - 0.3с: Быстрый блик (1% от 30с) */
+    0%, 1% { background-position: 0% 0; }
+
+    /* 0.3с - 9с: Солнце 1 (стоит долго) */
+    1.01%, 30% { background-position: 25% 0; }
+
+    /* 9с - 9.3с: Снова короткий блик (0.3 секунды) */
+    30.01%, 31% { background-position: 0% 0; }
     
+    /* 9.3с - 30с: Солнце 3 (до конца цикла) */
+    31.01%, 100% { background-position: 100% 0; }
+}
+
+/*        -------------------     */
+
+@keyframes rotation-player2 {
+    /* 0с - 0.3с: Быстрый блик (1% от 30с) */
+    0%, 1% { background-position: 0% 0; }
+
+    /* 0.3с - 9с: Солнце 1 (стоит долго) */
+    1.01%, 30% { background-position: 25% 0; }
+
+    /* 9с - 9.3с: Снова короткий блик (0.3 секунды) */
+    30.01%, 31% { background-position: 0% 0; }
+    
+    /* 9.3с - 30с: Солнце 3 (до конца цикла) */
+    31.01%, 100% { background-position: 100% 0; }
+}
+
+
+@keyframes rotation-player3 {
+    /* 0с - 0.3с: Быстрый блик (1% от 30с) */
+    0%, 1% { background-position: 0% 0; }
+
+    /* 0.3с - 9с: Солнце 1 (стоит долго) */
+    1.01%, 30% { background-position: 50% 0; }
+
+    /* 9с - 9.3с: Снова короткий блик (0.3 секунды) */
+    30.01%, 31% { background-position: 0% 0; }
+    
+    /* 9.3с - 30с: Солнце 3 (до конца цикла) */
+    31.01%, 100% { background-position: 100% 0; }
+}
+
+
+@keyframes rotation-player4 {
+    /* 0с - 0.3с: Быстрый блик (1% от 30с) */
+    0%, 1% { background-position: 0% 0; }
+
+    /* 0.3с - 9с: Солнце 1 (стоит долго) */
+    1.01%, 30% { background-position: 75% 0; }
+
+    /* 9с - 9.3с: Снова короткий блик (0.3 секунды) */
+    30.01%, 31% { background-position: 0% 0; }
+    
+    /* 9.3с - 30с: Солнце 3 (до конца цикла) */
+    31.01%, 100% { background-position: 100% 0; }
+}
+
+
+@keyframes rotation-player5 {
+    /* 0с - 0.3с: Быстрый блик (1% от 30с) */
+    0%, 1% { background-position: 0% 0; }
+
+    /* 0.3с - 9с: Солнце 1 (стоит долго) */
+    1.01%, 30% { background-position: 75% 0; }
+
+    /* 9с - 9.3с: Снова короткий блик (0.3 секунды) */
+    30.01%, 31% { background-position: 0% 0; }
+    
+    /* 9.3с - 30с: Солнце 3 (до конца цикла) */
+    31.01%, 100% { background-position: 50% 0; }
+}
+
+
+
+
+
+/*   ------- АНИМАЦИЯ ПАУЗА   -------------------    */
+
+#player1:hover, #player2:hover, #player3:hover, #player4:hover, #player5:hover {    animation-play-state: paused;   }
+
+
+/*        -----------   sprite-link::after  -------------------     */
+
+/*  ------------------   Общий стиль ------------------            */
+
+.sprite-link {    position: relative;   }
+
+.sprite-link::after {
+
+
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+                                               bottom: -2.5vw; /* Выплывает из-под иконки */
+    
+    background: rgba(0,0,0,0.8);
+    color: #fff;
+    padding: 2px 8px;
+    font-size: 0.9vw;
+ letter-spacing: 0.1vw;
+
+    border-radius: 4px;
+    white-space: nowrap;
+    
+    opacity: 0;
+    transition: 0.4s;
+    pointer-events: none;
+ 
+}
+
+
+/*   -----------------------  ЦВЕТА  ------------------------  */
+
+.sprite-link::after {
+    background: #F32977; 
+       
+    border: 2px solid #F32977 ;                          
+    color: #ffffff; 
+}
+
+
+
+#player1::after { content: "ИНФО"; }
+#player2::after { content: "ФОТО"; }
+#player3::after { content: "СЛОВАРИК "; }
+#player4::after { content: "ЛИЦЕНЗИЯ"; }
+#player5::after { content: "АВТОР"; }
+
+/*   -----------------------   ЭФФЕКТ ПРИ НАВЕДЕНИИ  ------------------------  */
+
+.sprite-link:hover::after {       opacity: 1;    bottom: -1.8vw; }   /* Выплывает из-под иконки */
+
+  /*  --------  пауза  ----------   */
+.sprite-link:hover {     animation-play-state: paused; }       
+
+.sprite-link::before {
+
+    content: "";
+    position: absolute;
+    /* Расширяем зону чувствительности на 2vw во все стороны */
+    top: -0.5vw;
+    bottom: -2.3vw;
+    left: -0.5vw;
+    right: -0.5vw;
+    
+    /* ВИЗУАЛЬНЫЙ ТЕСТ: */
+
+    background: rgba(255, 0, 0, .0);   border-radius: 50%;    z-index: -1;                                      
+        
+
+   }
+
+
+
+ /*    -------------              ------------------------    */
+
+/* 2. Базовый стиль для всех инфо-блоков */
+.sprite-link::after {
+    content: "";
+    opacity: 0;
+}
+
+/* ---------------  */
+
+
+.flash-once {       }
+
+
+
+.flash-once::after {
+    animation-name: flash;
+    animation-delay: 0s;
+    animation-duration:  2s;
+    animation-timing-function: step-end;
+    animation-fill-mode: forwards;
+}
+
+/*   -------   ЗАДЕРЖКА   -----  */
+.column:nth-child(1) .flash-once::after { animation-delay: 0.8s; }
+.column:nth-child(2) .flash-once::after { animation-delay: 1.2s; }     
+
+.column:nth-child(3) .flash-once::after { animation-delay: 1.4s; }
+
+.column:nth-child(4) .flash-once::after { animation-delay: 1.7s; }
+.column:nth-child(5) .flash-once::after { animation-delay: 1.9s; }
+
+
+
+/* 1. Общий сценарий анимации */
+@keyframes flash {
+    0%   { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+/* 5. ФИКС ХОВЕРА (чтобы всегда работал) */
+.sprite-link:hover::after {
+    animation: none !important;
+    
+}
+
+

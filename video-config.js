@@ -1,27 +1,27 @@
 
 const myVideos = [
     { 
-        url: "https://www.youtube.com/embed/mVXXOCYSPfA?si=_XfhQOWG_zzg3IPv"  ,
+        url: "https://www.youtube.com/embed/fOhwAdbrUOs?si=SlpTDC6iWV8KGHOX",
         title: '001 <br> Дорожная песня', 
         img: 'img-video/1.webp' 
     },
 
  { 
-        url: 'img-video/000.webp',
+        url: "https://www.youtube.com/embed/SolZbSxvJ1s?si=ZznZClDuwkafBD60",
         title: ' 002 <br> Дорога', 
-        img:'img-video/000.webp', 
+        img:'img-video/2.webp', 
     },
 
    { 
-        url: 'img-video/000.webp',
-        title: ' 003 <br> Дорога', 
-        img: 'img-video/000.webp', 
+        url: "https://www.youtube.com/embed/jIZgFfyh0mQ?si=vbvqwxrrUuRr6DTC",
+        title: ' 003 <br> Прибытие', 
+        img: 'img-video/3.webp', 
     },
 
     { 
-        url: 'img-video/000.webp',
-        title: ' 004 <br>  третье ', 
-         img: 'img-video/000.webp', 
+        url: "https://www.youtube.com/embed/_qH4kLW4YbQ?si=cnx6j-5T9GdsDqWv",
+        title: ' 004 <br>  Собеседование ', 
+         img: 'img-video/4.webp', 
     }
 
 

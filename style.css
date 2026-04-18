@@ -40,16 +40,21 @@ body {background-color: #FFF;
 
 /* ЗАГОЛОВОК -----------------------------------------------------------------  */
 
-
-	#top h1 {    z-index: 2;   top: 72%;   left: 51%;
+	#top h1 {
+    z-index: 2;
+    top: 72%;
+    left: 51%;
     transform: translate(-50%, -50%);
-    font-size: 7.0vw;   color: #FFF;   white-space: nowrap;
+    font-size: 7.0vw;
+    color: #FFF;
+    white-space: nowrap;
 
     /* Начальное состояние до старта анимации */
     letter-spacing: -0.1em;
 
+
     /* Настройки: имя, длительность, задержка, плавность, фиксация финала */
-    animation: spacingMove 0.8s ease-out 0s forwards;
+    animation: spacingMove 0.8s ease-out 0.2s forwards;
 }
 
 @keyframes spacingMove {
@@ -113,7 +118,7 @@ background: linear-gradient(to right, #FFF, #005C9F, #005C9F, #005C9F, #005C9F, 
     z-index: 10;
     background: #fff;
    
-      min-height: 500vh; /* Чтобы было куда скроллить для параллакса */
+      min-height: 500vh;         /* Чтобы было куда скроллить  */
 
 
     font-size: clamp(18px, 1.2vw + 14px, 24px);
@@ -130,10 +135,19 @@ background: linear-gradient(to right, #FFF, #005C9F, #005C9F, #005C9F, #005C9F, 
     display: flex;
     width: 100%;
    margin-bottom: clamp(16px, 1.172vw, 30px);
-    border: 1px solid #000;
-    background: #fff;
-    /* Убрали всё, что касается высоты. Пусть решает CENTER. */
+
+
+/* --------------------- ЦВЕТ БОРДЕР-----------------------------    */
+
+
+    border: 1px solid #f0f0f0;
+    background: #F2F0EB;
+
+    
 }
+
+/* Убрали всё, что касается высоты. Пусть решает CENTER. */
+
 .WRAPPER:first-of-type {
   margin-top: clamp(20px, 1.563vw, 40px);
 }
@@ -144,9 +158,6 @@ background: linear-gradient(to right, #FFF, #005C9F, #005C9F, #005C9F, #005C9F, 
     min-width: 0;        /* Снимает ограничение, чтобы блок не резался */
     height: auto;
 
-
-
-	
 
 	--gap: clamp(0px, 8vw - 40px, 60px);
 	--gap: clamp(0px, 12.5vw - 148px, 60px);
@@ -165,8 +176,6 @@ background: linear-gradient(to right, #FFF, #005C9F, #005C9F, #005C9F, #005C9F, 
 
 
 
-
-
  /* блок заглушки -------------------------------------------------  */
 .video-box .poster {
     position: absolute;
@@ -179,9 +188,8 @@ background: linear-gradient(to right, #FFF, #005C9F, #005C9F, #005C9F, #005C9F, 
 	background-size: cover;
 background-position: center;
 	
-	
-	/* Полупрозрачный серый */
 }
+
 
 .video-box {
     width: 100%;
@@ -191,7 +199,7 @@ background-position: center;
 }
 
 
-
+ /*  -------------------------------------------------  */
 h3 {
     top: 55%; left: 10%;
 	color: #FFF;
@@ -208,34 +216,62 @@ h3 {
   }
 
 
- /* блоки левый правый -------------------------------------------------  */
+
+ /*  -------- НОМЕРА И НАЗВАНИЯ РОЛИКОВ --------------  */
+
+
+.poster h3 {
+    /* Объявляем переменную для цвета обводки */
+    --outline-color: rgba(0, 0, 0, 0.7);
+    --s: 2px; /* Переменная для толщины, чтобы легко менять везде сразу */
+
+    color: #FFF;
+    letter-spacing: 2px;
+    
+    /* Используем переменные в text-shadow */
+    text-shadow: 
+        calc(var(--s) * -1) calc(var(--s) * -1) 0 var(--outline-color),  
+        var(--s) calc(var(--s) * -1) 0 var(--outline-color),
+        calc(var(--s) * -1) var(--s) 0 var(--outline-color),
+        var(--s) var(--s) 0 var(--outline-color),
+        0 var(--s) 0 var(--outline-color),
+        0 calc(var(--s) * -1) 0 var(--outline-color),
+        var(--s) 0 0 var(--outline-color),
+        calc(var(--s) * -1) 0 0 var(--outline-color);
+}
+ /* блоки левый правый ----------------------------  */
 
 
 .LEFT, .RIGHT {
     flex: 1;  border: 0px solid #ccc;     padding: 0px;   }
 
- /* блоки левый правый картинки -------------------------------------------------  */
-.LEFT img, .RIGHT img {
-    display: block; 
-    /* Твой ресайз: работает всегда, даже на прозрачном пикселе */
+ /* блоки левый правый картинки ---------------------------------------  */
+.LEFT img, .RIGHT img {    display: block;      min-width: 100px;
+
     width: clamp(100px, 20vw, 200px);
-     min-width: 100px;
-    /* Пропорция 250/500 = 1/2 */
+  
 }
 
+
+.LEFT img {     margin-left: auto;      }
+
+
  /* блоки левый правый тексты -------------------------------------------------  */
-.LEFT span, .RIGHT span {
-    display: block;     
+.LEFT span, .RIGHT span {   display: block;   }
     
-    /* Ресайз боковых полей текста: от 10px до 25px (как у видео) */
-    padding-left: clamp(10px, 1.5vw, 25px);
-    padding-right: clamp(10px, 1.5vw, 25px);
-    
+    /*   ------------  Ресайз боковых полей текста --------------   */
+
    
-    /* Ресайз шрифта  */
+.LEFT span   {     padding-left: clamp(10px, 2.5vw, 150px);   padding-right:  18px  ;   }
+.RIGHT span {    padding-left: clamp(10px, 1.5vw, 25px);        }
+
+    /*    ----------------- ШРИФТ  -----------------      */
+
+
+    .LEFT span, .RIGHT span {
                              font-size: clamp(14px, 1vw + 10px, 24px);
                        letter-spacing: 0em;
-color: #1A4567; 
+color: #454648; color: #232b3c ; 
 	
     line-height: 1.1;
     word-wrap: break-word;
@@ -244,8 +280,10 @@ color: #1A4567;
 
 
 .LEFT span { font-family: 'IBM', sans-serif;   font-style: italic;  padding-top: 1vw;   }
-.RIGHT span{   font-family: 'IBM', sans-serif;   font-style: normal;  padding-top: 4vw;  padding-bottom: 0;   } 
-.LEFT span img, .RIGHT span img {  padding: 0;  }
+.RIGHT span{   font-family: 'IBM', sans-serif;   font-style: italic;  padding-top: 5vw;  padding-bottom: 0;   } 
+
+
+
 
 /* КНОПКА ПЕРЕМОТКИ НАВЕРХ  ------------------ */
 .arrow-box {
@@ -258,7 +296,7 @@ color: #1A4567;
 }
 
 .arrow-box span {
-    color: #2A80C0; /* Твой синий */
+    color: #2A80C0; 
     /* Ресайз знака: на мобилках 30px, на мониторах до 60px */
     font-size: clamp(30px, 5vw, 60px);
     display: inline-block;
