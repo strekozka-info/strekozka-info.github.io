@@ -22,7 +22,17 @@ const myVideos = [
         url: "https://www.youtube.com/embed/_qH4kLW4YbQ?si=cnx6j-5T9GdsDqWv",
         title: ' 004 <br>  Собеседование ', 
          img: 'img-video/4.webp', 
+    }, 
+
+
+ { 
+        url:"https://www.youtube.com/embed/a266VkHwi-U?si=DASlvs6rKq_iUtSs",
+        title: ' 005 <br>  Вводная лекция ', 
+         img: 'img-video/5.webp', 
     }
+
+
+
 
 
 
