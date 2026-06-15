@@ -42,14 +42,11 @@ const myVideos = [
 
 
 
-
  { 
-        url:"https://www.youtube.com/embed/8IZW4wNqVa0?si=cV0s_TGpTFzAchaU",
-        title: ' 007 <br>  Вводная лекция ', 
+        url:"https://www.youtube.com/embed/8IZW4wNqVa0?si=Gru1b5v86LEcJCMN",
+        title: ' 007 <br>   Провал первой миссии ', 
          img: 'img-video/7.webp', 
     }
-
-
 
 
   
