@@ -29,10 +29,25 @@ const myVideos = [
         url:"https://www.youtube.com/embed/a266VkHwi-U?si=DASlvs6rKq_iUtSs",
         title: ' 005 <br>  Вводная лекция ', 
          img: 'img-video/5.webp', 
+    },
+
+
+
+
+ { 
+        url:"https://www.youtube.com/embed/FqcA0n1-bNg?si=S-QuQJzn2D5-Zu-L",
+        title: ' 006 <br>  Инструктаж ', 
+         img: 'img-video/6.webp', 
+    },
+
+
+
+
+ { 
+        url:"https://www.youtube.com/embed/8IZW4wNqVa0?si=cV0s_TGpTFzAchaU",
+        title: ' 007 <br>  Вводная лекция ', 
+         img: 'img-video/7.webp', 
     }
-
-
-
 
 
 
